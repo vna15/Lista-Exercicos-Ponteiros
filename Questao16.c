@@ -18,7 +18,7 @@ void *a, *b;
     }
 }
 
-int main( void )
+int main()
 {
     int tamanho = 40;
     int *vetor = (int *) malloc(sizeof(int)*tamanho);
