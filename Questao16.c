@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int comparacao(a, b)
-void *a, *b;
+int *a, *b;
 {
     if (*(int*)a > *(int*)b)
     {
