@@ -35,7 +35,6 @@ int main( void )
     }
     printf("\n");
 
-
     qsort(vetor, (size_t) tamanho, sizeof(int), comparacao);
 
     printf("Vetor ordenado:\n");
