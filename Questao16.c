@@ -22,25 +22,25 @@ int main()
 {
     int tamanho = 40;
     int *vetor = (int *) malloc(sizeof(int)*tamanho);
-    int aux;
+    int i;
 
-    for (aux = 0; aux < tamanho; aux++)
+    for (i=0;i<tamanho;i++)
     {
-        vetor[aux] = random()%tamanho;
+        vetor[i] = random()%tamanho;
     }
     printf("Vetor desordenado:");
-    for (aux = 0; aux < tamanho; aux++)
+    for (i=0;i<tamanho;i++)
     {
-        printf("%3d",vetor[aux]);
+        printf("%3d",vetor[i]);
     }
     printf("\n");
 
     qsort(vetor, (size_t) tamanho, sizeof(int), comparacao);
 
     printf("Vetor ordenado:\n");
-    for (aux = 0; aux < tamanho; aux++)
+    for (i=0;i<tamanho;i++)
     {
-        printf("%3d",vetor[aux]);
+        printf("%3d",vetor[i]);
     }
     printf("\n");
 
