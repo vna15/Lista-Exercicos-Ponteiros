@@ -26,7 +26,7 @@ int main()
 
     for (i=0;i<tamanho;i++)
     {
-        vetor[i] = random()%tamanho;
+        vetor[i] = rand()%tamanho;
     }
     printf("Vetor desordenado:");
     for (i=0;i<tamanho;i++)
